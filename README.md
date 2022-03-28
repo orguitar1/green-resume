@@ -1,0 +1,1 @@
+This is my portfolio site, i made it using a tailwindtoolbox.com template, it was very useful. It's meant to display what i can do and the websites i've built so far. I made it with tailwindcss and a little bit of JavaScript - check it out!

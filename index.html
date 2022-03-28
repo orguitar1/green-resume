@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Orlando Leija</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              mypink: "#f72585",
+              myblue: "#4895ef",
+              myaqua: "#4cc9f0",
+              mydarkblue: "#4361ee",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+      html {
+        font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+          "Noto Color Emoji";
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    class="leading-normal tracking-normal text-gray-100 bg-black scroll-smooth"
+    style="font-family: 'Ubuntu Mono', monospace"
+  >
+    <div class="h-full scroll-smooth">
+      <!-- NAVBAR  ------------------------------------------->
+
+      <nav
+        id="header"
+        class="w-full container mx-auto z-30 bg-black top-0 fixed"
+      >
+        <div
+          class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
+        >
+          <div class="pl-4 flex items-center">
+            <a
+              class="nav-element toggleColour flex items-center bg-clip-text text-gray-100 opacity-90 no-underline hover:no-underline transform hover:scale-100 duration-300 ease-in-out font-bold text-2xl lg:text-4xl"
+              href="#"
+            >
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-[#4361ee] via-[#4cc9f0] to-[#4895ef]"
+                >Orlando Leija</span
+              >
+            </a>
+          </div>
+          <div class="block lg:hidden pr-4">
+            <button
+              id="nav-toggle"
+              class="flex items-center p-1 text-myaqua opacity-90 hover:text-pink-400 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+            >
+              <svg
+                class="fill-current h-6 w-6"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-cover lg:bg-transparent text-black p-4 lg:p-0 z-20"
+            id="nav-content"
+          >
+            <ul class="list-reset lg:flex justify-end flex-1 items-center">
+              <li class="mr-3">
+                <a
+                  class="nav-element block lg:inline-block text-[#4cc9f0] opacity-90 no-underline hover:text-[#f72585] hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-mypink border-b-2 active:border-myaqua hover:border-myaqua hover:opacity-100"
+                  href="#aboutme"
+                  ><strong>ABOUT ME</strong></a
+                >
+              </li>
+
+              <li class="mr-3">
+                <a
+                  class="nav-element block lg:inline-block text-[#4cc9f0] opacity-90 no-underline hover:text-[#f72585] hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-mypink border-b-2 active:border-myaqua hover:border-myaqua hover:opacity-100"
+                  href="#certs"
+                  ><strong>CERTS</strong></a
+                >
+              </li>
+
+              <li class="mr-3">
+                <a
+                  class="nav-element block lg:inline-block text-[#4cc9f0] opacity-90 no-underline hover:text-[#f72585] hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-mypink border-b-2 active:border-myaqua hover:border-myaqua hover:opacity-100"
+                  href="#portfolio"
+                  ><strong>PORTFOLIO</strong></a
+                >
+              </li>
+
+              <li class="mr-3">
+                <a
+                  class="nav-element block lg:inline-block text-[#4cc9f0] opacity-90 no-underline hover:text-[#f72585] hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-mypink border-b-2 active:border-myaqua hover:border-myaqua hover:opacity-100"
+                  href="#contact"
+                  ><strong>CONTACT</strong></a
+                >
+              </li>
+              <li class="mr-3">
+                <a
+                  class="nav-element block lg:inline-block text-[#4cc9f0] opacity-90 no-underline hover:text-[#f72585] hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-mypink border-b-2 active:border-myaqua hover:border-myaqua hover:opacity-100"
+                  href="resume.html"
+                  ><strong>RESUME</strong></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-b border-mypink opacity-90 my-0 py-0" />
+      </nav>
+
+      <!--Main 1--------------------------------------------------------------->
+      <div
+        class="container pt-24 md:pt-36 mx-auto flex flex-wrap flex-col md:flex-row items-center"
+      >
+        <!--Left Col------------------------------------------------------>
+        <div
+          class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden"
+        >
+          <h1
+            class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-left"
+          >
+            <span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+            >
+              <strong>></strong>Hello, World!
+            </span>
+
+            <br />
+            <span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+              >i'm Orlando</span
+            ><strong
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue opacity-100"
+              ><span class="blink">_</span></strong
+            >
+          </h1>
+
+          <p
+            class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center md:text-left"
+          >
+            <strong>
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+                >I am a self taught front-end developer.</span
+              >
+              <br />
+              <br />
+
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+                >I'm mostly focused on front-end</span
+              >
+              <br />
+
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+                >- JS, HTML5, CSS3, Bootstrap,</span
+              >
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+                >Tailwindcss.</span
+              >
+              <br />
+              <br />
+
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+                >I also know the basics of PHP,</span
+              >
+
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+              >
+                mySQLI, Python3 and manipulating</span
+              >
+
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+                >data bases in phpMyAdmin.</span
+              ></strong
+            >
+          </p>
+        </div>
+
+        <!--Right Col------------------------------------------------------------------->
+        <div class="w-full xl:w-3/5 p-12 overflow-hidden text-center">
+          <img
+            class="mx-auto w-full md:w-3/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6 bg-gradient-to-br from-myaqua via-myblue to-mypink opacity-90 rounded-3xl py-1 px-3"
+            src="pc.png"
+            alt="PC"
+          />
+          <br />
+          <a
+            href="https://www.flaticon.com/free-icons/computer"
+            title="computer icons"
+            class="text-gray-400 opacity-20"
+            >Computer icons created by Freepik - Flaticon</a
+          >
+        </div>
+
+        <!-- NEXT LEVEL ------------------------------>
+
+        <!-- IMAGE ------------------------------------------------------------->
+
+        <div
+          class="w-full xl:w-3/5 p-12 overflow-hidden self-start text-center"
+        >
+          <img
+            class="mx-auto w-full md:w-3/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6 bg-gradient-to-bl from-myaqua via-myblue to-mypink opacity-90 rounded-full p-1 mt-40"
+            src="computer.png"
+            alt="computer"
+          />
+          <br />
+          <a
+            href="https://www.flaticon.com/free-icons/computer"
+            title="computer icons"
+            class="text-gray-400 opacity-20"
+            >Computer icons created by monkik - Flaticon</a
+          >
+        </div>
+
+        <!-- TEXT -------------------------------------------------------->
+
+        <div
+          class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden pt-10 my-20 mb-96"
+          id="aboutme"
+        >
+          <h1
+            class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-left mt-10"
+          >
+            <span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+            >
+              >I´m ready
+            </span>
+            <br />
+
+            <span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+              >to work</span
+            >
+            <br />
+
+            <span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+              >on your project!</span
+            ><strong
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+              ><span class="blink">_</span></strong
+            >
+            <br />
+          </h1>
+          <br />
+          <p
+            class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center md:text-left"
+          >
+            <strong>
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+                >I love learning new technologies and</span
+              >
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+                >collaborating with people!</span
+              >
+              <br />
+              <br />
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+                >I can't wait to learn and get</span
+              >
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+                >proficient at whatever language or</span
+              >
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+                >framework your project needs, and</span
+              >
+
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+                >provide value to you wherever i can!</span
+              >
+              <br />
+              <br />
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+              >
+                Here´s some of the stuff <br />
+              </span>
+
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+                >that i have built.</span
+              >
+              <br />
+
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+                >My certifications,</span
+              >
+              <br />
+
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+                >certificates and resume!</span
+              >
+            </strong>
+          </p>
+        </div>
+
+        <!-- NEXT LEVEL----------------------------------------------------------------->
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <!-- CERT LINK LIST left side----------------------------------------------------------->
+
+        <div
+          class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden my-14 items-center mt-20"
+          id="certs"
+        >
+          <h1
+            class="my-4 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-center md:p-1 mt-24"
+          >
+            <span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+              >>Certifications, </span
+            ><br />
+
+            <br />
+            <span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+              >certificates</span
+            >
+            <br /><span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+              >&</span
+            >
+            <br />
+            <span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+              >resume</span
+            ><strong
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+              ><span class="blink">_</span></strong
+            >
+          </h1>
+
+          <ul class="items-center text-center">
+            <li>
+              <a
+                class="inline-block ml-6 font-extrabold text-myaqua opacity-90 no-underline hover:text-mypink hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                href="resume.html"
+              >
+                <strong>Resume</strong></a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block ml-6 font-extrabold text-myaqua opacity-90 no-underline hover:text-mypink hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                href="certs/SW_beginners_python_3.png"
+              >
+                <strong>Python3 foundations</strong></a
+              >
+            </li>
+
+            <li>
+              <a
+                class="inline-block ml-6 font-extrabold text-myaqua opacity-90 no-underline hover:text-mypink hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                href="certs/SW_css3_foundations.png"
+              >
+                <strong>CSS3 foundations</strong></a
+              >
+            </li>
+
+            <li>
+              <a
+                class="inline-block ml-6 font-extrabold text-myaqua opacity-90 no-underline hover:text-mypink hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                href="certs/SW_html5_foundations.png"
+              >
+                <strong>HTML5 foundations</strong></a
+              >
+            </li>
+
+            <li>
+              <a
+                class="inline-block ml-6 font-extrabold text-myaqua opacity-90 no-underline hover:text-mypink hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                href="certs/SW_javascript_foundations.png"
+              >
+                <strong>JavaScript foundations</strong></a
+              >
+            </li>
+
+            <li>
+              <a
+                class="inline-block ml-6 font-extrabold text-myaqua opacity-90 no-underline hover:text-mypink hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                href="certs/SW_php_7_foundations.png"
+              >
+                <strong>PHP7 foundations</strong></a
+              >
+            </li>
+
+            <li>
+              <a
+                class="inline-block ml-6 font-extrabold text-myaqua opacity-90 no-underline hover:text-mypink hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                href="certs/Orlando - The Complete Cyber Security Course - Volume 1 - Hackers Exposed  Certificate-1.png"
+              >
+                <strong
+                  >The Complete Cyber Security Course <br />
+                  - Vol 1</strong
+                ></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <br />
+        <br />
+        <br /><br /><br />
+
+        <!-- IMAGE RIGHT SIDE ----------------------------------------------------->
+
+        <div class="w-full xl:w-3/5 p-12 overflow-hidden text-center">
+          <img
+            class="mx-auto w-full md:w-3/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6 mt-16 bg-gradient-to-tr from-myaqua via-myblue to-mypink opacity-90 rounded-full p-1"
+            src="working-at-home.png"
+            alt="working-at-home"
+          />
+          <br />
+          <a
+            href="https://www.flaticon.com/free-icons/computer"
+            title="computer icons"
+            class="text-gray-400 opacity-20"
+            >Computer icons created by juicy_fish - Flaticon</a
+          >
+        </div>
+        <br />
+
+        <!-- IMAGE  ------------------------------------------------>
+
+        <div
+          class="flex flex-col self-start items-start w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden my-16 p-10 mt-24 text-center"
+        >
+          <img
+            class="mx-auto w-full md:w-3/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6 bg-gradient-to-tl from-myaqua via-myblue to-mypink opacity-90 rounded-3xl p-1 mt-24"
+            src="website.png"
+            alt="website"
+          />
+          <br />
+          <a
+            href="https://www.flaticon.com/free-icons/computer"
+            title="computer icons"
+            class="text-gray-400 opacity-20"
+            >Computer icons created by Freepik - Flaticon</a
+          >
+        </div>
+
+        <br />
+        <br />
+
+        <!-- ARROW DOWN ----------------------------------------------->
+
+        <section
+          class="flex flex-col w-full xl:w-2/5 justify-center overflow-y-hidden items-center mt-20 bg-black opacity-90"
+          id="portfolio"
+        >
+          <h1
+            class="my-4 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-center md:p-1 mt-40"
+          >
+            <span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+              >>A few things i
+            </span>
+            <span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+            >
+              have built,</span
+            >
+            <br />
+            <span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+              >check out my</span
+            >
+
+            <span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+              >github for more!</span
+            ><strong
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+              ><span class="blink">_</span></strong
+            >
+          </h1>
+
+          <!-- ARROW --------------------------------------------->
+
+          <div
+            class="flex flex-col self-center items-center w-full xl:w-2/5 justify-center overflow-y-hidden my-16 p-10 mt-2 self-center text-center"
+          >
+            <a href="#firstdemo"
+              ><img
+                class="mx-auto w-1/5 md:w-1/5 lg:w-1/5 xl:w-full transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6 bg-gradient-to-tl from-myaqua via-myblue to-mypink opacity-90 rounded-full mt-24"
+                src="down-arrow.png"
+                alt="down-arrow"
+            /></a>
+
+            <br />
+            <a
+              href="https://www.flaticon.com/free-icons/down-arrow"
+              title="down arrow icons"
+              class="text-gray-400 opacity-20"
+              >Down arrow icons created by Gregor Cresnar - Flaticon</a
+            >
+          </div>
+        </section>
+
+        <!-- PORTFOLIO ------------------------------------------------>
+
+        <section
+          class="flex flex-col w-full xl:w-full justify-center overflow-y-hidden items-center mt-20 bg-black opacity-90"
+          id="portfolio"
+        >
+          <!-- div container for all portfolio elements -->
+          <div class="grid-col grid-cols-1 gap-2 max-w-6xl bg-transparent">
+            <!-- Tile 1 -->
+            <div class="flex flex-col bg-transparent rounded-lg p-4 m-2">
+              <div
+                class="inline-block bg-transparent rounded-lg"
+                id="firstdemo"
+              >
+                <img
+                  src="projects/diogo.png"
+                  alt="landingpage"
+                  class="border-solid border-2 border-gray-900 opacity-90 rounded-md mt-40"
+                />
+              </div>
+              <div class="flex flex-col inline-block">
+                <div class="flex items-center justify-around mt-4">
+                  <div class="flex flex-col px-auto">
+                    <h4
+                      class="text-xl font-semibold flex items-center justify-center self-center text-myaqua pl-2"
+                    >
+                      View live!
+                    </h4>
+                    <a
+                      class="inline-block no-underline text-center self-center h-10 p-2 leading-none rounded mt-3 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                      href="https://orguitar1.github.io/Pagina-de-Diogo/"
+                    >
+                      <img
+                        src="svg/eye-svgrepo-com.svg"
+                        alt="eye"
+                        height="47"
+                        width="47"
+                        class="bg-gradient-to-br from-mypink via-myblue to-myaqua rounded-full"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="flex flex-col px-auto">
+                    <h4
+                      class="text-xl font-semibold flex items-center justify-center self-center text-mypink pl-2"
+                    >
+                      View code!
+                    </h4>
+                    <a
+                      class="inline-block no-underline text-center self-center h-10 p-2 leading-none rounded mt-3 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                      href="https://github.com/orguitar1/Pagina-de-Diogo"
+                    >
+                      <img
+                        src="svg/github-icon.svg"
+                        alt="github"
+                        height="47"
+                        width="47"
+                        class="bg-gradient-to-br from-myaqua via-myblue to-mypink rounded-full p-0"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tile 2 -->
+            <div class="flex flex-col bg-transparent rounded-lg p-4 m-2">
+              <div class="inline-block bg-gray-400 rounded-lg mt-60">
+                <img
+                  src="projects/quattro.png"
+                  alt="landingpage"
+                  class="border-solid border-2 border-gray-900 opacity-90 rounded-md"
+                />
+              </div>
+              <div class="flex flex-col inline-block">
+                <div class="flex items-center justify-around mt-4">
+                  <div class="flex flex-col px-auto">
+                    <h4
+                      class="text-xl font-semibold flex items-center justify-center self-center text-myaqua pl-2"
+                    >
+                      View live!
+                    </h4>
+                    <a
+                      class="inline-block no-underline text-center self-center h-10 p-2 leading-none rounded mt-3 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                      href="https://orguitar1.github.io/Quattro-MaderaStudio/"
+                    >
+                      <img
+                        src="svg/eye-svgrepo-com.svg"
+                        alt="eye"
+                        height="47"
+                        width="47"
+                        class="bg-gradient-to-br from-mypink via-myblue to-myaqua rounded-full"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="flex flex-col px-auto">
+                    <h4
+                      class="text-xl font-semibold flex items-center justify-center self-center text-mypink pl-2"
+                    >
+                      View code!
+                    </h4>
+                    <a
+                      class="inline-block no-underline text-center self-center h-10 p-2 leading-none rounded mt-3 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                      href="https://github.com/orguitar1/Quattro-MaderaStudio"
+                    >
+                      <img
+                        src="svg/github-icon.svg"
+                        alt="github"
+                        height="47"
+                        width="47"
+                        class="bg-gradient-to-br from-myaqua via-myblue to-mypink rounded-full p-0"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tile 3 -->
+            <div class="flex flex-col bg-transparent rounded-lg p-4 m-2">
+              <div class="inline-block bg-gray-400 rounded-lg mt-60">
+                <img
+                  src="projects/orlando2.png"
+                  alt="landingpage"
+                  class="border-solid border-2 border-gray-900 opacity-90 rounded-md"
+                />
+              </div>
+              <div class="flex flex-col inline-block">
+                <div class="flex items-center justify-around mt-4">
+                  <div class="flex flex-col px-auto">
+                    <h4
+                      class="text-xl font-semibold flex items-center justify-center self-center text-myaqua pl-2"
+                    >
+                      View live!
+                    </h4>
+                    <a
+                      class="inline-block no-underline text-center self-center h-10 p-2 leading-none rounded mt-3 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                      href="https://orguitar1.github.io/OrlandoLeija-old-site/"
+                    >
+                      <img
+                        src="svg/eye-svgrepo-com.svg"
+                        alt="eye"
+                        height="47"
+                        width="47"
+                        class="bg-gradient-to-br from-mypink via-myblue to-myaqua rounded-full"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="flex flex-col px-auto">
+                    <h4
+                      class="text-xl font-semibold flex items-center justify-center self-center text-mypink pl-2"
+                    >
+                      View code!
+                    </h4>
+                    <a
+                      class="inline-block no-underline text-center self-center h-10 p-2 leading-none rounded mt-3 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                      href="https://github.com/orguitar1/OrlandoLeija-old-site"
+                    >
+                      <img
+                        src="svg/github-icon.svg"
+                        alt="github"
+                        height="47"
+                        width="47"
+                        class="bg-gradient-to-br from-myaqua via-myblue to-mypink rounded-full p-0"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- THE CODE FOR THIS SITE! --------------------------------------->
+          <div class="flex flex-col bg-transparent rounded-lg p-4 m-2">
+            <h1
+              class="my-4 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-center md:p-1 mt-40"
+            >
+              <strong
+                ><span
+                  class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+                  >>And here's the code for this site!</span
+                ></strong
+              ><strong
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+                ><span class="blink">_</span></strong
+              >
+            </h1>
+            <a
+              class="inline-block no-underline text-center h-10 p-2 leading-none rounded mt-3 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out self-center"
+              href="https://github.com/orguitar1/Orlando-Leija"
+            >
+              <img
+                src="svg/github-icon.svg"
+                alt="github"
+                height="47"
+                width="47"
+                class="bg-gradient-to-br from-myaqua via-myblue to-mypink rounded-full"
+              />
+            </a>
+          </div>
+        </section>
+        <br /><br /><br />
+
+        <!-- CONTACT LINKS---------------------------- -->
+
+        <div
+          class="flex flex-col mt-80 w-full xl:w-full justify-items-center lg:items-center overflow-y-hidden items-center text-center"
+          id="contact"
+        >
+          <h1
+            class="my-4 justify-items-center text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-center md:p-1 mt-60 lg:mt-20"
+          >
+            <span
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+              >>CONTACT</span
+            ><strong
+              class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-mydarkblue via-myaqua to-myblue"
+              ><span class="blink">_</span></strong
+            >
+          </h1>
+          <br />
+
+          <ul class="justify-items-center">
+            <li>
+              <a
+                class="inline-block justify-items-center lg:ml-6 no-underline hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                href="https://www.linkedin.com/in/orlando-leija-moreno-45bb1b167/"
+              >
+                <img
+                  src="svg/twitter-logo-svgrepo-com.svg"
+                  alt="twitter"
+                  height="47"
+                  width="47"
+                  class="bg-gradient-to-br from-mypink via-myblue to-myaqua rounded-full opacity-75 hover:opacity-100"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                class="inline-block justify-items-center lg:ml-6 no-underline hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out mt-6 md:mt-1"
+                href="https://www.linkedin.com/in/orlando-leija-moreno-45bb1b167/"
+              >
+                <img
+                  src="linkedin.png"
+                  alt="linkedin"
+                  height="47"
+                  width="47"
+                  class="bg-gradient-to-br from-mypink via-myblue to-myaqua rounded-full opacity-75 hover:opacity-100"
+                />
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="inline-block justify-items-center lg:ml-6 text-blue-300 no-underline hover:text-blue-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out mt-6 md:mt-1"
+                href="https://my.indeed.com/resume?hl=es&co=MX&from=gnav-homepage&_ga=2.85941209.1330341359.1647628099-1462905002.1647628099"
+              >
+                <img
+                  src="svg/indeed-svgrepo-com.svg"
+                  alt="indeed"
+                  height="47"
+                  width="47"
+                  class="bg-gradient-to-br from-myaqua via-myblue to-mypink rounded-tl-full rounded-tr-full rounded-br-full rounded-bl-full py-2 opacity-75 hover:opacity-100"
+                />
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="inline-block justify-items-center lg:ml-6 text-blue-300 no-underline hover:text-blue-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out mt-10 md:mt-2"
+                href="https://github.com/orguitar1"
+              >
+                <img
+                  src="svg/github-icon.svg"
+                  alt="github"
+                  height="47"
+                  width="47"
+                  class="bg-gradient-to-br from-mypink via-myblue to-myaqua rounded-full opacity-75 hover:opacity-100"
+                />
+              </a>
+            </li>
+
+            <li class="mt-4 md:mt-0">
+              <label
+                class="inline-block ml-6 font-extrabold text-mypink opacity-90 no-underline hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform"
+                for=""
+                >email:</label
+              ><a
+                class="inline-block ml-6 font-extrabold text-myaqua opacity-75 no-underline hover:opacity-100 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+                href="mailto:orlando512@hotmail.com"
+                >orlando512@hotmail.com</a
+              >
+            </li>
+            <li>
+              <label
+                class="inline-block ml-6 font-extrabold text-mypink opacity-90 no-underline hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform"
+                for=""
+                >whatsapp:</label
+              >
+              <p
+                class="inline-block ml-6 font-extrabold text-myaqua opacity-75 no-underline hover:opacity-100 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+              >
+                +52 4443 34 41 35
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- bbbbbbbbbbbbbbbbbbbbbbbbbb yyyyyyyyyyyy  eeeeeeeeee ----------------------------------->
+
+        <div class="w-full p-12 overflow-hidden text-center">
+          <img
+            class="mx-auto w-2/6 md:w-1/5 lg:w-1/5 xl:w-1/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6 bg-gradient-to-br from-myaqua via-myblue to-mypink opacity-90 rounded-br-full rounded-tr-full rounded-tl-full rounded-bl-xl items-center mt-40"
+            src="bye.png"
+            alt="PC"
+          />
+          <br />
+
+          <a
+            href="https://www.flaticon.com/free-icons/bye"
+            title="bye icons"
+            class="text-gray-400 opacity-20"
+            >Bye icons created by Freepik - Flaticon</a
+          >
+        </div>
+
+        <!--Footer-->
+        <div
+          class="inline-block w-full sm:flex pt-16 pb-6 text-sm text-center justify-center md:text-left fade-in"
+        >
+          <h6>
+            <a
+              class="text-myaqua opacity-90 no-underline hover:no-underline text-center justify-center"
+              href="#"
+              >&copy; By the way</a
+            >
+            <span class="text-myblue">- I love</span>
+            <a
+              class="text-mypink opacity-90 no-underline hover:no-underline justify-center text-center"
+              href="https://www.tailwindtoolbox.com"
+              >chocolate chip cookies</a
+            >
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      /*Toggle dropdown list*/
+      /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+
+      var navMenuDiv = document.getElementById("nav-content");
+      var navMenu = document.getElementById("nav-toggle");
+
+      // blink------------------------------------------
+
+      var blink_speed = 500;
+      var t = setInterval(function () {
+        var ele = document.getElementsByClassName("blink");
+
+        for (var i = 0; i < ele.length; i++) {
+          ele[i].style.visibility =
+            ele[i].style.visibility == "hidden" ? "" : "hidden";
+        }
+      }, blink_speed);
+
+      // collapse menu----------------------------------
+
+      navMenuDiv.onclick = function () {
+        navMenuDiv.classList.add("hidden");
+      };
+      document.onclick = check;
+      function check(e) {
+        var target = (e && e.target) || (event && event.srcElement);
+
+        //Nav Menu-----------------------------------
+        if (!checkParent(target, navMenuDiv)) {
+          // click NOT on the menu
+          if (checkParent(target, navMenu)) {
+            // click on the link
+            if (navMenuDiv.classList.contains("hidden")) {
+              navMenuDiv.classList.remove("hidden");
+            } else {
+              navMenuDiv.classList.add("hidden");
+            }
+          } else {
+            // click both outside link and outside menu, hide menu
+            navMenuDiv.classList.add("hidden");
+          }
+        }
+      }
+
+      function checkParent(t, elm) {
+        while (t.parentNode) {
+          if (t == elm) {
+            return true;
+          }
+          t = t.parentNode;
+        }
+        return false;
+      }
+    </script>
+  </body>
+</html>

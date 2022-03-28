@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Orlando Leija</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              matrixblack: "#0D0208",
+              darkgreen: "#03A062",
+              midgreen: "#008F11",
+              lightgreen: "#00FF41",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+      html {
+        font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+          "Noto Color Emoji";
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+  </head>
+
+  <body
+    class="leading-normal tracking-normal text-gray-100 bg-cover bg-fixed scroll-smooth"
+    style="font-family: 'Ubuntu Mono', monospace; background-image: url('amir.jpg')"
+  >
+    <div class="h-full scroll-smooth">
+      <!-- NAVBAR  ------------------------------------------->
+
+      <nav
+        id="header"
+        class="w-full container mx-auto z-30 bg-black top-0 fixed"
+      >
+        <div
+          class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
+        >
+          <div class="pl-4 flex items-center">
+            <a
+              class="nav-element toggleColour flex items-center bg-clip-text text-gray-100 opacity-90 no-underline hover:no-underline transform hover:scale-100 duration-300 ease-in-out font-bold text-2xl lg:text-4xl"
+              href="#"
+            >
+              <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-midgreen"
+                >Resume</span
+              >
+            </a>
+          </div>
+          <div class="block lg:hidden pr-4">
+            <button
+              id="nav-toggle"
+              class="flex items-center p-1 text-darkgreen opacity-90 hover:text-lightgreen focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+            >
+              <svg
+                class="fill-current h-6 w-6"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-cover lg:bg-transparent text-black p-4 lg:p-0 z-20"
+            id="nav-content"
+          >
+            <ul class="list-reset lg:flex justify-end flex-1 items-center">
+              <li class="mr-3">
+                <a
+                  class="nav-element block lg:inline-block text-darkgreen opacity-90 no-underline hover:text-lightgreen hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-darkgreen border-b-2 active:border-lightgreen hover:border-lightgreen hover:opacity-100"
+                  href="index.html"
+                  ><strong>PORTFOLIO SITE</strong></a
+                >
+              </li>
+              <li class="mr-3">
+                <a
+                  class="nav-element block lg:inline-block text-darkgreen opacity-90 no-underline hover:text-lightgreen hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-darkgreen border-b-2 active:border-lightgreen hover:border-lightgreen hover:opacity-100"
+                  href="#whatioffer"
+                  ><strong>WHAT I OFFER</strong></a
+                >
+              </li>
+              <li class="mr-3">
+                <a
+                class="nav-element block lg:inline-block text-darkgreen opacity-90 no-underline hover:text-lightgreen hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-darkgreen border-b-2 active:border-lightgreen hover:border-lightgreen hover:opacity-100"
+                  href="#workexperince"
+                  ><strong>WORK EXPERIENCE</strong></a
+                >
+              </li>
+              <li class="mr-3">
+                <a
+                class="nav-element block lg:inline-block text-darkgreen opacity-90 no-underline hover:text-lightgreen hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-darkgreen border-b-2 active:border-lightgreen hover:border-lightgreen hover:opacity-100"
+                  href="#education"
+                  ><strong>EDUCATION</strong></a
+                >
+              </li>
+              <li class="mr-3">
+                <a
+                class="nav-element block lg:inline-block text-darkgreen opacity-90 no-underline hover:text-lightgreen hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out lg:border-none border-darkgreen border-b-2 active:border-lightgreen hover:border-lightgreen hover:opacity-100"
+                  href="#skills"
+                  ><strong>SKILLS</strong></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-b border-darkgreen opacity-90 my-0 py-0" />
+      </nav>
+
+      <!--Main 1--------------------------------------------------------------->
+      <div
+        class="container pt-10 md:pt-10 mx-auto flex flex-wrap flex-col md:flex-row items-center"
+      >
+        
+
+         <!-- PHOTO ------------------------------------------->
+
+ 
+ <div class="w-full xl:w-3/5 p-12 overflow-hidden text-center">
+  <h1
+  class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center md:text-center"
+>
+  <span
+    class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
+  >
+    <strong>></strong>Orlando Leija
+  </span>
+
+  <br />
+  <span
+    class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
+    >Front-end developer</span
+  ><strong
+    class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen opacity-100"
+    ><span class="blink">_</span></strong
+  >
+</h1>
+
+  <img
+  class="mx-auto w-full md:w-3/5 transform  transition hover:scale-105 duration-700 ease-in-out hover:rotate-6  opacity-90 rounded-3xl py-1 px-3 mt-10"
+    src="me.jpg"
+    alt="me"
+  />
+</div>
+        
+
+        
+
+          <!--Right col------------------------------------------------------>
+
+          <div
+          class="flex flex-col w-full xl:w-2/5 justify-center overflow-y-hidden"
+          >
+            
+            <p
+              class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center "
+            >
+              <strong>
+                <span
+                  class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
+                  >Age: 34 y/o <br /> </span> <br />
+                <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> Email: <a href="mailto:orlando512@hotmail.com">orlando512@hotmail.com <br /></span> </a> 
+                  <br /> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">Phone: +52-4443-34-41-35</span> 
+                
+                <br /><br>
+                <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">Portfolio (in case you want <br>  </span> 
+                 <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">to copy the link): </span>  <br> <br> <a href="https://orguitar1.github.io/Orlando-Leija/">  <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> https://orguitar1.github.<br></span><span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">io/Orlando-Leija/</span></a>
+                
+  
+                
+  
+                
+              
+            </p>
+          </div>
+      
+
+        <!-- WHAT I OFFER ------------------------------>
+<div class="flex flex-col text-center self-center items-center w-full xl:w-full justify-center lg:items-center overflow-y-hidden pt-10 my-20 mb-96 xl:px-60" id="whatioffer"> 
+  <h1
+            class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center  mt-20" 
+          >
+            <span
+            class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
+            >>What I Offer</span><strong
+            class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
+              ><span class="blink">_</span></strong
+            >
+            <br />
+          </h1>
+          <br>
+  <h2 class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center ">
+    <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">Strong self learning ability, discipline, commitment and </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> the willingness to adapt to whatever your project </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">requires.</span></h2>
+    <br><br>
+    <h2 class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center "><span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">In my portfolio site you will find examples of my work, </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">highlighting my skills.</span> 
+    </h2>
+<br><br>
+<h2 class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center "><span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">I welcome the opportunity to speak to you if you feel </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> like i would be a strong candidate for any position in </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> your organization!</span> </h2>
+</div>
+       
+
+        <!-- WORK EXPERIENCE -------------------------------------------------------->
+
+        <div
+          class="flex flex-col w-full xl:w-full justify-center overflow-y-hidden pt-10 my-20 mb-96 mt-60 xl:px-60"
+          id="workexperince"
+        >
+          <h1
+            class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center mt-20" 
+          >
+            <span
+            class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
+            >>Work Experience</span><strong
+            class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
+              ><span class="blink">_</span></strong
+            >
+            <br />
+          </h1>
+          <br />
+
+          <h3 class="my-4 ml-6 text-2xl md:text-4xl text-gray-100 opacity-90 font-extrabold leading-tight text-center mt-10"><span
+            class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
+            >>Freelance web designer <br /></span>
+           
+            <br />
+            <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">2020 - Present</span></h3>  
+          <p
+            class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"
+          >
+            <strong>
+            
+                
+                <br>
+                <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">I've been learning to code for over a year now, and i </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> have been working with clients to adapt to their needs. I </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> have built a few websites you can checkout over at my portfolio site! </span> <br> <br> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> I've mainly been learnig about JavaScript, HTML5, CSS3, </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> C, Tailwindcss, Bootstrap, PHP7, Python3, MySQLI and </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">phpMyAdmin.</span> 
+                
+              
+              <br />
+              
+            </strong>
+          </p>
+          <br>
+          <br><h3 class="my-4 ml-6 text-2xl md:text-4xl text-gray-100 opacity-90 font-extrabold leading-tight text-center mt-10"><span
+            class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
+            >>Satellite internet <br> </span><span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">tech support agent</span>  <br />
+           
+            <br />
+            <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">2020 - Present</span></h3> 
+          <p
+            class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"
+          >
+            <strong>
+              
+                
+                <br>
+                <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">I've been working as a tech support agent for Hughesnet </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">Satellite Internet through Teleperformance for over a</span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">year.</span>  <br> <br> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">Dealing with tons of clientes from different countries</span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">every day and helping them reslove their internet</span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> performanece issues. It's challenging but fun! </span>
+              
+              <br />
+            </strong>
+          </p>
+          <br>
+          <br>
+          <h3 class="my-4 ml-6 text-2xl md:text-4xl text-gray-100 opacity-90 font-extrabold leading-tight text-center mt-10"><span
+            class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
+            >>Musician (Guitarrist) </span> <br> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">at Holland America Line</span>  <br>  <br />
+           
+            <br />
+            <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">2017 - 2020</span></h3>
+            <br>
+            <br>
+            <p
+            class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"
+          >
+            <strong>
+              
+                
+                <br>
+                <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">Profesisonal musician performing on cruise ships, in a </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> variety of different music styles and with many different </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> bands and artists. 100% English speaking working </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> enviroment.</span>
+              
+              <br />
+            </strong>
+          </p>
+          
+        </div>
+
+        <!-- NEXT LEVEL----------------------------------------------------------------->
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <!-- EDUCATION ----------------------------------------------------------->
+
+        <div class="flex flex-col w-full xl:w-full justify-center overflow-y-hidden pt-10 my-20 mb-96 xl:px-60 " id="education">
+
+          <h1
+            class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center mt-20"
+          >
+            <span
+            class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
+            >>Education</span><strong
+            class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
+              ><span class="blink">_</span></strong
+            >
+            <br />
+            <br>
+          </h1>
+          <p
+            class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"
+          >
+            <strong>
+              <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">Studioweb.com courses and certifications on foundations </span> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"> of JavaScript, Python3, PHP7, HTML5, CSS3 and mySQL.</span>
+              
+              <br>
+              <br>
+               <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">CS50: Introduction to Computer Science</span> 
+                <br />
+                <br>
+              <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">The complete cyber security course vol 1 -StationX</span>
+               <br>
+               <br>
+                <span
+                class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
+                >Preparatoria abierta 024 Mexico <br /> 
+                
+              </span>
+
+            </strong>
+
+
+
+          </p>
+        </div>
+
+        <br />
+        <br />
+
+        <!-- SKILLS  ---------------------------------------------->
+
+        <div class="flex flex-col w-full xl:w-full justify-center overflow-y-hidden pt-10 my-20 mb-96 mt-60 xl:px-60"
+        id="skills">
+        <h1
+        class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center mt-20" 
+      >
+        <span
+        class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
+        >>Skills</span><strong
+        class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
+          ><span class="blink">_</span></strong
+        >
+        
+      </h1>
+    
+    <ul class="mt-8">
+      <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">-Basic knowledge of cybersecurity</span> </li>
+      
+      <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">-Spanish - Native speaker (Mexico)</span> </li>
+      <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">-English - Advanced (95%)</span> </li>
+      <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">-Customer service experience</span> </li>
+      <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">-Sales experience</span> </li>
+      <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">-Professional musician - over 18 years of experience</span> </li>
+    </ul>
+    </div>
+
+    <!-- REFERENCES ------------------------------------------------->
+
+    <div class="flex flex-col w-full xl:w-full justify-center overflow-y-hidden pt-10 my-20 mb-96 mt-60 xl:px-60"
+    id="skills">
+    <h1
+    class="my-4 ml-6 text-3xl md:text-5xl text-gray-100 opacity-90 font-extrabold leading-tight text-center mt-20" 
+  >
+    <span
+    class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
+    >>References</span><strong
+    class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen"
+      ><span class="blink">_</span></strong
+    >
+    
+  </h1>
+
+<ul class="mt-8">
+  
+  
+  <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">-Karla Zuñiga, +52 81 2515 0023</span> </li>
+  <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">-Ernesto Cheng, +52 81 8161 6373</span> </li>
+  <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">-Mike Willox, +33 6 10 68 20 15</span> </li>
+  <li class="leading-normal ml-6 text-gray-100 opacity-90 md:text-2xl mb-8 text-center"> <span class="bg-clip-text text-transparent font-extrabold bg-gradient-to-r from-darkgreen via-lightgreen to-darkgreen">-Dan Bolton, 347-480-1474
+    <br>
+    <a class="inline-block font-extrabold text-myaqua opacity-75 no-underline hover:opacity-100 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out" href="mailto:dan@qualityoverseasmusic.com">dan@qualityoverseasmusic.com</a>
+     
+    </span> </li>
+  
+</ul>
+</div>
+
+       
+       
+        
+
+        
+
+        <!--Footer-->
+        <div
+          class="inline-block w-full sm:flex pt-16 pb-6 text-sm text-center justify-center md:text-left fade-in"
+        >
+          <h6>
+            <a
+              class="text-darkgreen opacity-90 no-underline hover:no-underline text-center justify-center"
+              href="#"
+              >&copy; By the way</a
+            >
+            <span class="text-lightgreen">- I love</span>
+            <a
+              class="text-darkgreen opacity-90 no-underline hover:no-underline justify-center text-center"
+              href="https://www.tailwindtoolbox.com"
+              >chocolate chip cookies</a
+            >
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      /*Toggle dropdown list*/
+      /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+
+      var navMenuDiv = document.getElementById("nav-content");
+      var navMenu = document.getElementById("nav-toggle");
+
+      // blink------------------------------------------
+
+      var blink_speed = 500;
+      var t = setInterval(function () {
+        var ele = document.getElementsByClassName("blink");
+
+        for (var i = 0; i < ele.length; i++) {
+          ele[i].style.visibility =
+            ele[i].style.visibility == "hidden" ? "" : "hidden";
+        }
+      }, blink_speed);
+
+      // collapse menu----------------------------------
+
+      navMenuDiv.onclick = function () {
+        navMenuDiv.classList.add("hidden");
+      };
+      document.onclick = check;
+      function check(e) {
+        var target = (e && e.target) || (event && event.srcElement);
+
+        //Nav Menu-----------------------------------
+        if (!checkParent(target, navMenuDiv)) {
+          // click NOT on the menu
+          if (checkParent(target, navMenu)) {
+            // click on the link
+            if (navMenuDiv.classList.contains("hidden")) {
+              navMenuDiv.classList.remove("hidden");
+            } else {
+              navMenuDiv.classList.add("hidden");
+            }
+          } else {
+            // click both outside link and outside menu, hide menu
+            navMenuDiv.classList.add("hidden");
+          }
+        }
+      }
+
+      function checkParent(t, elm) {
+        while (t.parentNode) {
+          if (t == elm) {
+            return true;
+          }
+          t = t.parentNode;
+        }
+        return false;
+      }
+    </script>
+  </body>
+</html>
